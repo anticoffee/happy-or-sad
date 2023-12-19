@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+
+*{
+    font-family: 'Comfortaa';
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: #242629;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    color: #DD1155;
+    font-size: 45px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 10%;
+    transition: 0.2s;
+}
+
+.title span{
+    color: #17BEBB;
+}
+
+.display{
+    color: #DD1155;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: 2.5%;
+}
+
+
+.color{
+    color: #17BEBB;
+    font-size: 28px;
+}
+
+.win{
+    background-color:#9A48D0;
+    color: whitesmoke;
+    border: none;
+    border-radius: 15px;
+    font-size: 28px;
+    padding: 8px 50px;
+    box-shadow: rgba(154, 72, 208, 0.55) 0px 0px 15px 5px;
+}
+/*
+@keyframes glow {
+    from {
+      text-shadow: 
+      0% #fff, 
+      0% #9A48D0, 
+      0%  #9A48D0, 
+      0%  #9A48D0, 
+      0% #9A48D0, 
+      0% #9A48D0, 
+      0% #9A48D0;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+*/
+.game-grid{
+    background: #171819;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 10px;
+    margin-top: 45px;
+    
+}
+
+.box{
+    background: #242629;
+    height:108px;
+    width: 108px;
+    cursor: pointer;
+    font-size: 20px;
+}
+/*
+button{
+    background-color: #9A48D0;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 15px;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: rgba(154, 72, 208, 0.645) 0px 2px 40px 4px;
+}*/
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12%;
+}
+
+#newGame{
+    background-color: #9A48D0;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 15px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+#newGame:hover{
+    background-color: #9430D5;
+}
+/*
+.happy{
+    background-image: url("./images/nigiri.png");
+    background-size: cover;
+}
+
+.sad{
+    background-image: url("./images/onigiri.png");
+    background-size: cover;
+}
+*/
+
+.happy{
+    background-image: url("./images/happy1.svg");
+    background-size: cover;
+    background-position: center;
+    background-size: 100px 82px;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.sad{
+    background-image: url("./images/sad1.svg");
+    background-size: cover;
+    background-position: center;
+    background-size: 100px 82px;
+    background-repeat: no-repeat;
+}
